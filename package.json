@@ -14,7 +14,8 @@
   },
   "keywords": [
     "object",
-    "query"
+    "query",
+    "values"
   ],
   "author": "Nicolas Froidure (SimpliField)",
   "license": "MIT",
