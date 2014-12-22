@@ -1,10 +1,54 @@
 var assert = require('assert');
-var miniquery = require('../src');
+var miniquery = require('../src/index');
 
 describe('miniquery', function () {
 
   it('should be a function', function() {
     assert(miniquery instanceof Function);
+  });
+
+  it('should fail with a bad objs value', function() {
+    assert.throws(function() {
+      miniquery('dd', {});
+    });
+  });
+
+  it('should fail with a bad path value', function() {
+    assert.throws(function() {
+      miniquery({}, []);
+    });
+  });
+
+  it('should work with simple property addressing', function() {
+    var tree = [{
+      foo: {
+        bar: 'test'
+      },
+      bar: {
+        bar: 'test2'
+      }
+    }];
+
+    assert.deepEqual(
+      miniquery('foo.bar', tree),
+      ['test']
+    );
+  });
+
+  it('should work with any property addressing', function() {
+    var tree = [{
+      foo: {
+        bar: 'test'
+      },
+      bar: {
+        bar: 'test2'
+      }
+    }];
+
+    assert.deepEqual(
+      miniquery('@.bar', tree),
+      ['test', 'test2']
+    );
   });
 
   it('should work with README samples', function() {
