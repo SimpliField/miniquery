@@ -27,11 +27,11 @@ var fruits = [{
 }, {
 	name: 'banana',
   count: 0,
-  color: ['yellow', 'white']
+  colors: ['yellow', 'white']
 }, {
 	name: 'kiwi',
   count: 8,
-  color: ['brown', 'green']
+  colors: ['brown', 'green']
 }];
 
 var orangeColor = miniquery('0.colors.0', [fruits]);
@@ -75,3 +75,4 @@ npm test
 ## Stats
 [![NPM](https://nodei.co/npm/miniquery.png?downloads=true&stars=true)](https://nodei.co/npm/miniquery/)
 [![NPM](https://nodei.co/npm-dl/miniquery.png)](https://nodei.co/npm/miniquery/)
+
