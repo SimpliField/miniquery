@@ -47,6 +47,45 @@ assert.deepEqual(colors, ['orange', 'yellow', 'white', 'brown', 'green']);
 Note that `miniquery` always returns an `Array` even if there is no or only one
  result.
 
+## CLI usage
+
+Install miniquery globally:
+```sh
+sudo npm install -g miniquery
+```
+
+Then, simply run your queries on one or more JSON files. Let's assume we want
+ to list distinct keywords on all of our NodeJS projects :
+```sh
+miniquery "keywords.*" ~/projects/*/package.json -p | uniq
+# minimatch
+# gulp
+# svg
+# gulp
+# gulp-plugin
+# (...)
+# github
+# REST
+# HTTP
+# server
+# web
+#services
+```
+
+Get every available options by running:
+```sh
+miniquery -h
+
+# Usage: miniquery [options] <query> <file ...>
+#
+# Options:
+#
+#   -h, --help       output usage information
+#   -V, --version    output the version number
+#   -v, --verbose    tell me everything!
+#   -j, --json       output JSON
+#   -p, --primitive  print primitives only
+```
 
 ## API
 
