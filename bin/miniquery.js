@@ -6,7 +6,7 @@ var miniquery = require('../src');
 
 program
   .usage('[options] <query> <file ...>')
-  .version('1.0.1')
+  .version('1.1.0')
   .option('-v, --verbose', 'tell me everything!')
   .option('-j, --json', 'output JSON')
   .option('-p, --primitive', 'print primitives only')
