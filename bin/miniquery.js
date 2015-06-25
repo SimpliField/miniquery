@@ -27,7 +27,7 @@ if(!pathes.length) {
   pathes = ['/dev/stdin'];
 }
 
-program.verbose = true;
+program.verbose = false;
 pathes.reduce(function(matches, filePath) {
   var content;
   var curMatches;
