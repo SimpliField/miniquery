@@ -6,7 +6,7 @@ var miniquery = require('../src');
 
 program
   .usage('[options] <query> <file ...>')
-  .version('1.1.0')
+  .option('-V, --V', 'return the current miniquery version')
   .option('-v, --verbose', 'tell me everything!')
   .option('-j, --json', 'output JSON')
   .option('-p, --primitive', 'print primitives only')
@@ -15,6 +15,16 @@ program
 
 var query = program.args[0];
 var pathes = program.args.slice(1);
+
+// Print version informations
+if(program.V) {
+  (function printVersion() {
+    var path = require('path');
+
+    console.log(require(path.join(__dirname, '..', 'package.json')).version);
+  }());
+  process.exit();
+}
 
 // Query is required
 if(!query) {
@@ -55,4 +65,3 @@ pathes.reduce(function(matches, filePath) {
     console.log(program.json ? JSON.stringify(match) : match);
   }
 });
-
