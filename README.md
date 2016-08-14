@@ -3,7 +3,7 @@
 `miniquery` allows you to query objects for a given path and returns you an
  `Array` of values matching.
 
-[![NPM version](https://badge.fury.io/js/miniquery.png)](https://npmjs.org/package/miniquery) [![Build status](https://secure.travis-ci.org/SimpliField/miniquery.png)](https://travis-ci.org/SimpliField/miniquery) [![Dependency Status](https://david-dm.org/SimpliField/miniquery.png)](https://david-dm.org/SimpliField/miniquery) [![devDependency Status](https://david-dm.org/SimpliField/miniquery/dev-status.png)](https://david-dm.org/SimpliField/miniquery#info=devDependencies) [![Coverage Status](https://coveralls.io/repos/SimpliField/miniquery/badge.png?branch=master)](https://coveralls.io/r/SimpliField/miniquery?branch=master) [![Code Climate](https://codeclimate.com/github/SimpliField/miniquery.png)](https://codeclimate.com/github/SimpliField/miniquery)
+[![NPM version](https://badge.fury.io/js/miniquery.svg)](https://npmjs.org/package/miniquery) [![Build status](https://secure.travis-ci.org/SimpliField/miniquery.png)](https://travis-ci.org/SimpliField/miniquery) [![Dependency Status](https://david-dm.org/SimpliField/miniquery.png)](https://david-dm.org/SimpliField/miniquery) [![devDependency Status](https://david-dm.org/SimpliField/miniquery/dev-status.png)](https://david-dm.org/SimpliField/miniquery#info=devDependencies) [![Coverage Status](https://coveralls.io/repos/SimpliField/miniquery/badge.svg?branch=master)](https://coveralls.io/r/SimpliField/miniquery?branch=master) [![Code Climate](https://codeclimate.com/github/SimpliField/miniquery.png)](https://codeclimate.com/github/SimpliField/miniquery)
 
 ## Installation
 
